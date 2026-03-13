@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div align="center">
+		<form action="update" method="post">
+			<input type="hidden" name="id" th:value="${student.id}">
+			Name: <input type="text" name="name" placeholder="enter the name" th:value="${student.name}" > <br><br>
+			Address: <input type="text" name="address" placeholder="enter the address" th:value="${student.address}" ><br><br>
+			Phone: <input type="text" name="phone" placeholder="enter the Phone" th:value="${student.phone}"><br><br>
+			DOB: <input type="date" name="dob" placeholder="enter the date of birth" th:value="${student.dob}"><br><br>
+			<button>Update</button>
+		</form>
+	</div>
+	<script th:if="${message}">
+		alert("[[${message}]]");
+	</script>
+</body>
+</html>
