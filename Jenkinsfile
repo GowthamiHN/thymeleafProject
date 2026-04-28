@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME="gowthamihn/springThymeleafProject",
+        IMAGE_NAME="gowthamihn/springThymeleafProject"
         IMAGE_TAG="v1"
     }
 
