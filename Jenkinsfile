@@ -40,7 +40,7 @@ pipeline {
         }
         stage("Run the new image") {
             steps {
-                sh 'docker run  -d -p 8080:8080 --name spring-project $IMAGE_NAME:$IMAGE_TAG'
+                sh 'docker run  -d -p 8080:8085 --name spring-project $IMAGE_NAME:$IMAGE_TAG'
             }
         }
     }
