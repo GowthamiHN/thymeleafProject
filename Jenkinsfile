@@ -20,7 +20,7 @@ pipeline {
         }
         stage("Build the image") {
             steps {
-                sh 'docker build -t $IMAGE_NAME:$IMAGE_TAG'
+                sh 'docker build -t $IMAGE_NAME'
             }
         }
         stage("Login Docker") {
